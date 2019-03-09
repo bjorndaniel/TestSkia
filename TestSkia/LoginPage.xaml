@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    Title="Skia playground"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="TestSkia.LoginPage">
+    <ContentPage.Content >
+        <StackLayout HorizontalOptions="Center" Padding="30">
+            <Label Text="Log in" FontSize="36"></Label>
+            <Label Text="Username" FontSize="Small"></Label>
+            <Entry x:Name="Username" Focused="Username_Focused" Placeholder="Username"/>
+            <Entry x:Name="Password" IsPassword="true" Focused="Handle_Focused" />
+            <Button Text="Log in" Clicked="Handle_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
