@@ -3,14 +3,24 @@
     Title="Skia playground"
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
     x:Class="TestSkia.LoginPage">
     <ContentPage.Content >
-        <StackLayout HorizontalOptions="Center" Padding="30">
-            <Label Text="Log in" FontSize="36"></Label>
-            <Label Text="Username" FontSize="Small"></Label>
-            <Entry x:Name="Username" Focused="Username_Focused" Placeholder="Username"/>
-            <Entry x:Name="Password" IsPassword="true" Focused="Handle_Focused" />
-            <Button Text="Log in" Clicked="Handle_Clicked"></Button>
-        </StackLayout>
+        <Grid HorizontalOptions="CenterAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+                <skia:SKCanvasView 
+                    x:Name="CanvasView"
+                    PaintSurface="Handle_PaintSurface"
+                    SizeChanged="Handle_SizeChanged"
+                />
+            <StackLayout x:Name="FormLayout" HorizontalOptions="CenterAndExpand" Padding="30">
+                <Label HorizontalOptions="Center" Text="Log in" FontSize="36"></Label>                
+                <Entry WidthRequest="200" x:Name="Username" Focused="Entry_Focused" Placeholder="Username"/>
+                <Entry WidthRequest="200" x:Name="Password" Placeholder="Password" IsPassword="true" Focused="Entry_Focused" />
+                <Button Text="Log in" Clicked="Handle_Clicked"></Button>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

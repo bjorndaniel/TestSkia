@@ -26,4 +26,7 @@
   <ItemGroup>
     <EmbeddedResource Include="ikon_aktuellt.svg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
 </Project>
