@@ -86,7 +86,7 @@ namespace TestSkia
         {
             var surface = e.Surface;
             var canvas = surface.Canvas;
-            canvas.Clear(SKColors.CornflowerBlue);
+            canvas.Clear(SKColors.White);
             var width = e.Info.Width;
             var height = e.Info.Height;
             canvas.Translate(width / 2, height / 2);

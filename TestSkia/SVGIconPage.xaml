@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage 
-    xmlns="http://xamarin.com/schemas/2014/forms" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="TestSkia.SVGIconPage"
     xmlns:local="clr-namespace:TestSkia"
     >
@@ -10,32 +10,35 @@
             <Label HorizontalOptions="CenterAndExpand" Text="SVGPage"></Label>
             <StackLayout Orientation="Horizontal">
                  <local:Icon ResourceId="TestSkia.ikon_aktuellt.svg"
-                        WidthRequest="150" 
-                        HeightRequest="150" 
-                        HorizontalOptions="Center" 
+                        WidthRequest="150"
+                        HeightRequest="150"
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         />
                 <StackLayout>
                      <local:Icon ResourceId="TestSkia.ikon_aktuellt.svg"
-                        WidthRequest="60" 
-                        HeightRequest="60" 
-                        HorizontalOptions="Center" 
+                        WidthRequest="60"
+                        HeightRequest="60"
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         />
                      <local:Icon ResourceId="TestSkia.ikon_aktuellt.svg"
-                        WidthRequest="30" 
-                        HeightRequest="30" 
-                        HorizontalOptions="Center" 
+                        WidthRequest="30"
+                        HeightRequest="30"
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         />
                 </StackLayout>
-                
+
                 </StackLayout>
-           
+
              <local:Icon ResourceId="TestSkia.ikon_aktuellt.svg"
-                        WidthRequest="200" 
-                        HeightRequest="300" 
-                        HorizontalOptions="Center" 
+                        WidthRequest="200"
+                        HeightRequest="300"
+                        Padding="-10"
+                         CornerRadius="20"
+                        BackgroundColor="HotPink"
+                        HorizontalOptions="Center"
                         VerticalOptions="Center"
                         />
         </StackLayout>

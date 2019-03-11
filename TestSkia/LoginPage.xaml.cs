@@ -49,16 +49,6 @@ namespace TestSkia
         private void Handle_Clicked(object sender, EventArgs e)
         {
             _highlightForm.HighlightElement((View)sender, CanvasView, FormLayout);
-            Device.StartTimer(TimeSpan.FromSeconds(1), () =>
-            {
-                Task.Factory.StartNew(async() => {
-                    Device.BeginInvokeOnMainThread(async () =>
-                    {
-                        await Navigation.PushAsync(new MainPage());
-                    });
-                   });
-                return false;
-            });
         }
     }
 }
